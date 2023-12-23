@@ -1,0 +1,32 @@
+AT
+-->OK
+AT+VERSION?
+->xx
+AT + ADDR?
+-->0023,05,00319E (your address may vary )
+
+
+compare version of both hc05
+do for both master and slave
+store the address of both in notepad
+
+__________________________________________________
+
+
+//master
+
+AT+RESET
+AT+ROLE=1
+AT+BIND=//slave address
+
+//slave
+AT+RESET
+AT+ROLE=0
+
+
+
+_____________________________________________
+pairing
+press on power button for 5 sec 
+enters into pairing mode
+Hopefully both hc05 connects!
